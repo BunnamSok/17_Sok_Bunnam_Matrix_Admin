@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<title th:text="#{addrole}"></title>
+</head>
+<body>
+	
+<!--main-container-part-->
+	<div id="content" layout:fragment="content">
+
+		<div id="content-header">
+			<h1 th:text="#{addrole}"></h1>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row-fluid">
+				<div class="span12">
+					<div class="widget-box">
+						<div class="widget-title">
+							<span class="icon"> <i class="icon-align-justify"></i>
+							</span>
+							<h5>Add Role</h5>
+						</div>
+						<div class="widget-content nopadding">
+							<form action="#" method="get" class="form-horizontal">
+								<div class="control-group">
+									<label th:text="#{id}"class="control-label">ID:</label>
+									<div class="controls">
+										<input type="email" class="span11"
+											">
+									</div>
+								</div>
+								
+								<div class="control-group">
+									<label th:text="#{username}" class="control-label">Username:</label>
+									<div class="controls">
+										<input type="text" class="span11" >
+									</div>
+								</div>
+								<div class="control-group">
+									<label th:text="#{email}" class="control-label">Email:</label>
+									<div class="controls">
+										<input type="email" class="span11">
+									</div>
+								</div>
+								
+								<div class="control-group">
+									<label th:text="#{gender}" class="control-label">Gender:</label>
+									<div class="controls">
+										<select>
+											<option th:text="#{male}" >Male</option>
+											<option th:text="#{female}">Female</option>
+										</select>
+									</div>
+								</div>
+								
+								<div class="control-group">
+									<label th:text="#{phonenum}" class="control-label">Phone Number:</label>
+									<div class="controls">
+										<input type="text" class="span11"
+											">
+									</div>
+								</div>
+								
+								<div class="control-group">
+									<label th:text="#{role}" class="control-label">Role</label>
+									<div class="controls">
+										<input type="email" class="span11"
+											">
+									</div>
+								</div>
+							
+								<div class="form-actions">
+									<button type="submit" th:text="#{save}" class="btn btn-success">Save</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--end-main-container-part-->
+
+</body>
+</html>

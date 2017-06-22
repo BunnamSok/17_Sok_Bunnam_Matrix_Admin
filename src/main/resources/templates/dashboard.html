@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<title th:text="#{dashboard}"></title>
+</head>
+<body>
+
+	<!--main-container-part-->
+	<div id="content" layout:fragment="content">
+
+		<div id="content-header">
+			<h1 th:text="#{dashboard}"></h1>
+			
+		</div>
+
+		<!--Action boxes-->
+		<div class="container-fluid">
+			<div class="quick-actions_homepage">
+				<ul class="quick-actions">
+					<li class="bg_lb"><a th:href="@{/dashboard}"> <i
+							class="icon-dashboard"></i> <span class="label label-important">20</span>
+							<span th:text="#{dashboard}"></span>
+				
+					</a></li>
+					<li class="bg_lg"><a th:href="@{/user-cu}"> <i
+							class="icon-plus"></i> <span th:text="#{adduser}"></span>
+					</a></li>
+					<li class="bg_ly"><a th:href="@{/user-list}"> <i
+							class="icon-list"></i><span class="label label-success">101</span>
+							<span th:text="#{userlist}"></span>
+					</a></li>
+					<li class="bg_lo"><a th:href="@{/role-cu}"> <i
+							class="icon-plus"></i> 
+							<span th:text="#{addrole}"></span>
+					</a></li>
+					<li class="bg_ls"><a th:href="@{/role-list}"> <i
+							class="icon-list"></i> <span th:text="#{RoleList}"></span>
+					</a></li>
+
+				</ul>
+			</div>
+			<!--End-Action boxes-->
+		</div>
+	</div>
+
+	<!--end-main-container-part-->
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="layout">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<title th:text="#{userlist}"></title>
+</head>
+<body>
+
+	<!--main-container-part-->
+	<div id="content" layout:fragment="content">
+
+		<div id="content-header">
+			<h1 th:text="#{userlist}"></h1>
+		</div>
+
+
+		<div class="container-fluid">
+			<hr>
+			<div class="row-fluid">
+				<div class="span12">
+
+
+
+					<div class="widget-box">
+						<div class="widget-title">
+							<span class="icon"> <i class="icon-th"></i>
+							</span>
+							<h5 th:text="#{userlist}"></h5>
+							<span th:text="#{featured}"class="label label-info">Featured</span>
+						</div>
+						<div class="widget-content nopadding">
+							<table class="table table-bordered table-striped">
+								<thead>
+									<tr>
+										<th th:text="#{id}">ID</th>
+										<th th:text="#{username}">Username</th>
+										<th th:text="#{email}">Email</th>
+										<th th:text="#{gender}">Gender</th>
+										<th th:text="#{phonenum}">Phone Number</th>
+										<th th:text="#{status}">Status</th>
+										<th th:text="#{action}">Action</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1</td>
+										<td>bunnam</td>
+										<td>bunnamsok@gmail.com</td>
+										<td>Male</td>
+										<td>070411110</td>
+										<td>True</td>
+										<td>Delete|Update|Detail</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>summer</td>
+										<td>summer@gmail.com</td>
+										<td>Male</td>
+										<td>011472939</td>
+										<td>False</td>
+										<td>Delete|Update|Detail</td>
+									</tr>
+									
+								</tbody>
+							</table>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--end-main-container-part-->
+</body>
+</html>
