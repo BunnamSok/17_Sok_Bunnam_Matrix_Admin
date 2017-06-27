@@ -5,85 +5,61 @@
 <head>
 <meta charset="UTF-8">
 <meta name="description" content="">
-<title th:text="#{addrole}"></title>
+<title th:text="#{_ta_role_reg}"></title>
 </head>
 <body>
-	
-<!--main-container-part-->
+	<!--main-container-part-->
 	<div id="content" layout:fragment="content">
 
 		<div id="content-header">
-			<h1 th:text="#{addrole}"></h1>
+			<h1 class="ta-font-kh-header" th:text="#{_ta_role_reg}"></h1>
 		</div>
 
+		<!--Action boxes-->
 		<div class="container-fluid">
+
+			<hr />
+
 			<div class="row-fluid">
 				<div class="span12">
 					<div class="widget-box">
 						<div class="widget-title">
 							<span class="icon"> <i class="icon-align-justify"></i>
 							</span>
-							<h5>Add Role</h5>
+							<h5 class="ta-font-kh" th:text="#{_ta_role_reg_info}">Personal-info</h5>
 						</div>
 						<div class="widget-content nopadding">
 							<form action="#" method="get" class="form-horizontal">
 								<div class="control-group">
-									<label th:text="#{id}"class="control-label">ID:</label>
+									<label class="control-label ta-font-kh"
+										th:text="#{_ta_role_reg_id}">Role ID :</label>
 									<div class="controls">
-										<input type="email" class="span11"
-											">
+										<input type="text" class="span11" />
 									</div>
 								</div>
-								
+
 								<div class="control-group">
-									<label th:text="#{username}" class="control-label">Username:</label>
+									<label class="control-label ta-font-kh"
+									th:text="#{_ta_role_reg_name}">Role Name :</label>
 									<div class="controls">
-										<input type="text" class="span11" >
+										<input type="text" class="span11" />
 									</div>
 								</div>
-								<div class="control-group">
-									<label th:text="#{email}" class="control-label">Email:</label>
-									<div class="controls">
-										<input type="email" class="span11">
-									</div>
-								</div>
-								
-								<div class="control-group">
-									<label th:text="#{gender}" class="control-label">Gender:</label>
-									<div class="controls">
-										<select>
-											<option th:text="#{male}" >Male</option>
-											<option th:text="#{female}">Female</option>
-										</select>
-									</div>
-								</div>
-								
-								<div class="control-group">
-									<label th:text="#{phonenum}" class="control-label">Phone Number:</label>
-									<div class="controls">
-										<input type="text" class="span11"
-											">
-									</div>
-								</div>
-								
-								<div class="control-group">
-									<label th:text="#{role}" class="control-label">Role</label>
-									<div class="controls">
-										<input type="email" class="span11"
-											">
-									</div>
-								</div>
-							
+
 								<div class="form-actions">
-									<button type="submit" th:text="#{save}" class="btn btn-success">Save</button>
+									<button type="submit" class="btn btn-success ta-font-kh" th:text="#{_ta_button_save}">Save</button>
 								</div>
 							</form>
 						</div>
 					</div>
+
+
 				</div>
 			</div>
+			<!--End-Action boxes-->
 		</div>
 	</div>
+
 	<!--end-main-container-part-->
 
 </body>

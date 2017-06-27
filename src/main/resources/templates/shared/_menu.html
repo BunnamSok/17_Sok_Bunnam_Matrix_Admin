@@ -1,21 +1,22 @@
 <!--sidebar-menu-->
 <div id="sidebar">
-	<a th:href="@{/dashboard}" class="visible-phone"><i class="icon icon-home"></i>
-		Dashboard</a>
+	<a th:href="@{/dashboard}" class="visible-phone"><i
+		class="icon icon-home"></i> Dashboard</a>
 	<ul>
-		<li th:class="${ACT_DASH}"><a th:href="@{/dashboard}" th:text="#{dashboard}"><i
-				class="icon icon-home "></i> <span>Dashboard</span></a></li>
-				
-		<li th:class="${ACT_USER}"><a th:href="@{/user-cu}" th:text="#{adduser}"><i class="icon icon-plus"></i> <span>Add User</span></a></li>
-					
-		<li th:class="${ACT_USER_LIST}"><a th:href="@{/user-list}" th:text="#{userlist}" ><i class="icon icon-list"></i> <span>List User</span></a></li>
-		
-		
-		<li th:class="${ACT_ROLE}"><a th:href="@{/role-cu}" th:text="#{addrole}"><i class="icon icon-plus"></i> <span>Add Role</span></a>
-		</li>
-		
-		<li th:class="${ACT_ROLE_LIST}"><a th:href="@{/role-list}" th:text="#{RoleList}"><i class="icon icon-list"></i> <span>List Roles</span></a>
-		</li>
+		<li th:class="${ACT_DASH}"><a th:href="@{/admin/dashboard}"><i
+				class="icon icon-home"></i> <span class="ta-font-kh" th:text="#{_ta_header_dashboard}">Dashboard</span></a></li>
+
+		<li th:class="${ACT_USER_ADD}"><a th:href="@{/user/user-cu}"><i
+				class="icon icon-plus"></i> <span class="ta-font-kh" th:text="#{_ta_user_reg}">Add New User</span></a></li>
+
+		<li th:class="${ACT_USER_LIST}"><a  th:href="@{/user/user-list}"><i class="icon icon-list"></i> <span class="ta-font-kh" th:text="#{_ta_user_list}">List
+					Users</span></a></li>
+
+		<li th:class="${ACT_ROLE_ADD}"><a th:href="@{/admin/role-cu}"><i class="icon icon-plus"></i> <span class="ta-font-kh" th:text="#{_ta_role_reg}">Add
+					New Role</span></a></li>
+
+		<li th:class="${ACT_ROLE_LIST}"><a th:href="@{/admin/role-list}"><i class="icon icon-list"></i> <span class="ta-font-kh" th:text="#{_ta_role_list}">List
+					Roles</span></a></li>
 	</ul>
 </div>
 <!--sidebar-menu-->

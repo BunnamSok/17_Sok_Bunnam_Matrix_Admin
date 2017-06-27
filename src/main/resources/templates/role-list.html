@@ -5,75 +5,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="description" content="">
-<title th:text="#{RoleList}"></title>
+<title th:text="#{_ta_role_list}"></title>
 </head>
 <body>
-	
 	<!--main-container-part-->
 	<div id="content" layout:fragment="content">
 
 		<div id="content-header">
-			<h1 th:text="#{RoleList}"></h1>
+			<h1 class="ta-font-kh-header" th:text="#{_ta_role_list}"></h1>
 		</div>
 
-
 		<div class="container-fluid">
-			<hr>
+			<hr />
 			<div class="row-fluid">
 				<div class="span12">
-
-
-
 					<div class="widget-box">
 						<div class="widget-title">
 							<span class="icon"> <i class="icon-th"></i>
 							</span>
-							<h5 th:text="#{RoleList}">Role List</h5>
-							<span th:text="#{featured}" class="label label-info">Featured</span>
+							<h5 class="ta-font-kh" th:text="#{_ta_role_list_info}">Static
+								table</h5>
 						</div>
 						<div class="widget-content nopadding">
 							<table class="table table-bordered table-striped">
 								<thead>
-									<tr>
-										<th th:text="#{id}">ID</th>
-										<th th:text="#{username}">Username</th>
-										<th th:text="#{email}">Email</th>
-										<th th:text="#{gender}">Gender</th>
-										<th th:text="#{phonenum}">Phone Number</th>
-										<th th:text="#{role}">Role</th>
-										<th th:text="#{action}">Action</th>
+									<tr class="ta-font-kh ta-th">
+										<th th:text="#{_ta_no}">No.</th>
+										<th th:text="#{_ta_role_reg_name}">Role Name</th>
+										<th th:text="#{_ta_action}">Action</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>1</td>
-										<td>Dara</td>
-										<td>Dara@gmail.com</td>
-										<td>Male</td>
-										<td>012345678</td>
-										<td>Teacher</td>
-										<td>Delete|Update|Detail</td>
+										<th>1</th>
+										<th>Administrator</th>
+										<th>
+											<button type="button" class="btn btn-mini btn-danger">
+												Delete
+											</button>
+											<button type="button" class="btn btn-mini btn-warning">
+												Update
+											</button>
+										</th>
 									</tr>
 									<tr>
-										<td>2</td>
-										<td>Nita</td>
-										<td>nita@gmail.com</td>
-										<td>Female</td>
-										<td>011223344</td>
-										<td>Student</td>
-										<td>Delete|Update|Detail</td>
+										<th>2</th>
+										<th>Manager</th>
+										<th>
+											<button type="button" class="btn btn-mini btn-danger">
+												Delete
+											</button>
+											<button type="button" class="btn btn-mini btn-warning">
+												Update
+											</button>
+										</th>
 									</tr>
-									
+									<tr>
+										<th>3</th>
+										<th>Seller</th>
+										<th>
+											<button type="button" class="btn btn-mini btn-danger">
+												Delete
+											</button>
+											<button type="button" class="btn btn-mini btn-warning">
+												Update
+											</button>
+										</th>
+									</tr>
 								</tbody>
 							</table>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
 	</div>
 
 	<!--end-main-container-part-->
+
 </body>
 </html>

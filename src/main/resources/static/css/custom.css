@@ -1,7 +1,20 @@
-.ta-font-kh{
-	font-famlily:'Khmer OS Siemreap', 'Bokor';
+@CHARSET "UTF-8";
+.mtx-icon-size {
+	font-size: 6em !important;
 }
-
-.ta-font-kh-header{
-	font-family:'Khmer OS Moul', 'Bokor';
+.ta-icon-size-big {
+	font-size: 75px;
+	color: #16A085;
+}
+.ta-font-kh {
+	font-family: 'Khmer OS Siemreap', 'Bokor';
+}
+.ta-font-kh-header {
+	font-family: 'Khmer MEF2', 'Khmer OS Muol';
+}
+.ta-center-col {
+	text-align: center !important;
+}
+tr.ta-th th {
+	font-size: 1em !important;
 }

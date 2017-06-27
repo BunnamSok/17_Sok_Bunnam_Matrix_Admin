@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="description" content="">
-<title th:text="#{dashboard}"></title>
+<title th:text="#{_ta_header_dashboard}"></title>
 </head>
 <body>
 
@@ -13,34 +13,29 @@
 	<div id="content" layout:fragment="content">
 
 		<div id="content-header">
-			<h1 th:text="#{dashboard}"></h1>
-			
+			<h1 class="ta-font-kh-header" th:text="#{_ta_header_dashboard}"></h1>
 		</div>
+
 
 		<!--Action boxes-->
 		<div class="container-fluid">
+			<hr />
 			<div class="quick-actions_homepage">
 				<ul class="quick-actions">
-					<li class="bg_lb"><a th:href="@{/dashboard}"> <i
-							class="icon-dashboard"></i> <span class="label label-important">20</span>
-							<span th:text="#{dashboard}"></span>
-				
-					</a></li>
-					<li class="bg_lg"><a th:href="@{/user-cu}"> <i
-							class="icon-plus"></i> <span th:text="#{adduser}"></span>
-					</a></li>
-					<li class="bg_ly"><a th:href="@{/user-list}"> <i
-							class="icon-list"></i><span class="label label-success">101</span>
-							<span th:text="#{userlist}"></span>
-					</a></li>
-					<li class="bg_lo"><a th:href="@{/role-cu}"> <i
-							class="icon-plus"></i> 
-							<span th:text="#{addrole}"></span>
-					</a></li>
-					<li class="bg_ls"><a th:href="@{/role-list}"> <i
-							class="icon-list"></i> <span th:text="#{RoleList}"></span>
+					<li class="bg_lb span3"><a href="#"> <i
+							class="icon-user mtx-icon-size"></i> <span class="label label-info ta-font-kh" th:text="${MALE_TOTAL} + ' ' + #{_ta_user}">20</span>
+							<b class="ta-font-kh" th:text="#{_ta_total_user_m}">Total Male</b>
 					</a></li>
 
+					<li class="bg_lg span3"><a href="#"> <i
+							class="icon-user mtx-icon-size"></i> <span class="label label-success ta-font-kh" th:text="${FEMALE_TOTAL} + ' ' + #{_ta_user}">20</span>
+							<b class="ta-font-kh" th:text="#{_ta_total_user_f}">Total Female</b>
+					</a></li>
+
+					<li class="bg_lo span3"><a href="#"> <i
+							class="icon-group mtx-icon-size"></i> <span class="label label-important ta-font-kh" th:text="${TOTAL} + ' ' + #{_ta_user}">20</span>
+							<b class="ta-font-kh" th:text="#{_ta_total_user}">Total</b>
+					</a></li>
 				</ul>
 			</div>
 			<!--End-Action boxes-->
